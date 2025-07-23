@@ -27,7 +27,7 @@ test = [
 ]
 
 [tool.uv.sources]
-project1 = { path = "../project1", editable = true }
+project1 = { path = "../project1" }
 
 [build-system]
 requires = ["hatchling"]
