@@ -1,7 +1,7 @@
 version: 2
 updates:
   # Python project dependencies
-  - package-ecosystem: "pip"
+  - package-ecosystem: "uv"
     directory: "/project1"
     schedule:
       interval: "weekly"
@@ -19,7 +19,7 @@ updates:
       include: "scope"
 
   # Python project dependencies
-  - package-ecosystem: "pip"
+  - package-ecosystem: "uv"
     directory: "/project2"
     schedule:
       interval: "weekly"

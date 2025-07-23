@@ -1,0 +1,38 @@
+/target
+**/*.rs.bk
+**/target
+**/.idea/**
+**/.vscode/**
+**/.DS_Store
+**/venv
+**/.coverage
+**/htmlcov/**
+services/gills/.env
+**/.vscode/**
+.venv
+**/*.ipynb
+integration/frontend/cypress/downloads/
+locust/*.txt
+locust/*.html
+locust/*.result
+locust/*.log
+locust/__pycache__/
+**/*.cookie
+uv_secrets.txt
+
+# Devenv
+.devenv*
+devenv.local.nix
+.pre-commit-config.yaml
+
+# Direnv
+.direnv/
+.pre-commit-config.yaml
+
+# Private environment variables
+.env
+.env.*
+
+# Make
+.tmp
+
