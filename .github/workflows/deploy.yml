@@ -30,6 +30,10 @@ jobs:
             **/uv.lock
             **/pyproject.toml
 
+      - name: Install dependencies
+        working-directory: ./${{ matrix.project }}
+        run: uv sync --locked
+
       - name: Run tests
         working-directory: ./${{ matrix.project }}
         run: pytest --maxfail=1 --disable-warnings
