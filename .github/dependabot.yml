@@ -8,8 +8,6 @@ updates:
       day: "monday"
       time: "09:00"
     target-branch: "main"
-    reviewers:
-      - "dependabot[bot]"
     labels:
       - "dependencies"
       - "python"
@@ -26,8 +24,6 @@ updates:
       day: "monday"
       time: "09:00"
     target-branch: "main"
-    reviewers:
-      - "dependabot[bot]"
     labels:
       - "dependencies"
       - "python"

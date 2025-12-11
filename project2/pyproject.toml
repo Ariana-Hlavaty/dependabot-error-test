@@ -32,3 +32,10 @@ project1 = { path = "../project1" }
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "src/**",
+    "tests/**",
+    "README.md",
+]
