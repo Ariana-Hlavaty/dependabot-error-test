@@ -16,11 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
       - name: Install uv
         uses: astral-sh/setup-uv@v7
         with:
@@ -30,6 +25,13 @@ jobs:
             **/uv.lock
             **/pyproject.toml
 
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          # Uses the latest python version allowed by the project's constraints.
+          python-version-file: '${{ matrix.project }}/pyproject.toml'
+
       - name: Install dependencies
         working-directory: ./${{ matrix.project }}
-        run: uv sync --locked
+        run: uv sync --locked --all-extras
+
